@@ -1,1 +1,55 @@
+-- table users
+Create Table users (
+user_id INt,
+skill VARCHAR (20)
+);
 
+-- Data for users 
+insert into users (user_id, skill) VALUES
+(1,'Python'),
+(1,'SQL'),
+(1,'Tablue'),
+(2,'Python'),
+(2,'SQL'),
+(3,'Python'),
+(3,'Tablue'),
+(4,'SQL');
+
+-- Tables iphone_users and iphone_models
+ 
+Create Table iphone_users (
+User_id INt,
+Iphone_model VARCHAR (20)
+);
+
+Create Table iphone_models (
+model varchar (20)
+);
+
+-- Data for iphone_users 
+insert into iphone_users (user_id,Iphone_model ) VALUES
+(1,'iphone_11'),
+(1,'iphone_12'),
+(2,'iphone_13'),
+(3,'iphone_11'),
+(3,'iphone_12'),
+(3,'iphone_13'),
+(3,'iphone_14'),
+(3,'iphone_15'),
+(4,'iphone_12'),
+(4,'iphone_13'),
+(4,'iphone_14'),
+(5,'iphone_15'),
+(6,'iphone_13'),
+(6,'iphone_13'),
+(6,'iphone_14'),
+(6,'iphone_14'),
+(6,'iphone_15');
+
+-- Data for iphone_models
+insert into iphone_models VALUES
+('iphone_11'),
+('iphone_12'),
+('iphone_13'),
+('iphone_14'),
+('iphone_15');
