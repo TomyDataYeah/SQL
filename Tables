@@ -15,15 +15,12 @@ insert into users (user_id, skill) VALUES
 (3,'Tablue'),
 (4,'SQL');
 
--- Tables iphone_users and iphone_models
+
+-- Table iphone_users 
  
 Create Table iphone_users (
 User_id INt,
 Iphone_model VARCHAR (20)
-);
-
-Create Table iphone_models (
-model varchar (20)
 );
 
 -- Data for iphone_users 
@@ -40,11 +37,17 @@ insert into iphone_users (user_id,Iphone_model ) VALUES
 (4,'iphone_13'),
 (4,'iphone_14'),
 (5,'iphone_15'),
-(6,'iphone_13'),
+(6,'iphone_11'),
+(6,'iphone_12'),
 (6,'iphone_13'),
 (6,'iphone_14'),
-(6,'iphone_14'),
-(6,'iphone_15');
+(6,'iphone_16');
+
+
+-- Table iphone_models
+Create Table iphone_models (
+model varchar (20)
+);
 
 -- Data for iphone_models
 insert into iphone_models VALUES
@@ -53,3 +56,17 @@ insert into iphone_models VALUES
 ('iphone_13'),
 ('iphone_14'),
 ('iphone_15');
+
+-- Questions
+
+-- 1st Question
+-- Select users who knows only python and SQL. They need to know both of these languages but they can not know any other (becoming overqualified)
+-- use table "users" 
+
+-- 2nd Question
+-- Select user who have had only one iphone in his life and it wa iphone 15
+-- use table iphone_users
+
+-- 3rd Question
+-- Select Users who have had all models of iphone which are liseted in table iphone_models
+-- use tables  iphone_users and iphone_models
